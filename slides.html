@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Front End Development 101</title>
+	<meta name="viewport" content="width=1024">
+
+        <link rel="stylesheet" href="dist/coderdeck-core.min.css" type="text/css">
+	<link rel="stylesheet" id='style-theme-link' href="dist/coderdeck.css" type="text/css" >
+	<link rel="stylesheet" id='style-theme-link' href="style.css" type="text/css" >
+	<script type="text/javascript" src="//use.typekit.net/bvs1pon.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="dist/modernizr.js"></script>
+	<script src="jquery.fittext.js"></script>
+</head>
+<body class="deck-container">
+
+<script type='text/coderdeck' id='coderdeck-default'>
+  <html>
+    <head>
+      <script src='dist/jquery.min.js'>SCRIPTEND
+    </head>
+    <body>
+	    CODE
+    </body>
+</html>
+</script>
+
+
+<script type='text/coderdeck' id='coderdeck-style-example'>
+	<html>
+		<title>test</title>
+		<style>
+			CODE
+		</style>
+		<body>
+			<h1>I'm a H1 heading</h1>
+			<h2>I'm a H2 heading</h2>
+			<p>Pargraph of text &lt;p&gt; here</p>
+			<div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+			<div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+		</body>
+	</html>
+</script> 	
+
+<article class='slide slide-subhead'>
+	<section class="box drop-shadow lifted">
+	<h1>Boston StartUp School</h1>
+	<h2>Front End Development 101<br/>A.K.A. We <font color="red">&hearts;</font> the Web</h2>
+	<p><a href='http://marthar.github.com/startupExercises/'>marthar.github.com/startupExercises</a><br/>
+	</p>
+	</section>
+</article>
+
+
+<article class='slide slide-list'>
+	<section class="box drop-shadow lifted">
+	<h2>Agenda</h2>
+		<ul>
+    		<li><p>State of Front End Web Dev</p></li>
+    		<li><p>HTML5 &amp; the Semantic Web</p></li>
+ 			<li><p>CSS Crash Course</p></li>
+ 			<li><p>jQuery - just enough to get you into trouble</p></li>
+		</ul>
+		<h3>LUNCH!</h3>
+		<ul>
+			<li><p>Skeuomorphism with Alex Lynn</p></li>
+ 			<li><p>Bootstrapping it!</p></li>
+  		</ul>
+	</section>
+ </article>
+
+ <article class='slide slide-info slide-info-blue'>	
+	<div class="whitebox">
+    <h1>ME = Martha Rettig</h1>
+	</div>
+	<div>
+    <ul>
+	<li>
+	      	<p><a href="https://twitter.com/artimated">&#64;artimated</a></p>
+	  </li>
+      <li>
+      	<p>B.A. in Graphic Design</p>
+      </li>
+      <li>
+      	<p>Teach Web Design at MassArt, <br/>Adjunct Typography Prof at Simmons</p>
+      </li>
+      <li>
+      	<p>10 years of agency experience in print &amp; branding</p>
+      </li>
+      <li>
+      	<p>5 years as creative director, web &amp; UX at Cykod</p>
+      </li>
+      <li>
+      <p>working towards my MFA at MassArt in DMI</p>
+      </li>
+    </ul>
+	</div>	
+ </article>
+
+<article class='slide slide-list'>
+	<div class="box drop-shadow lifted">
+	<h2>I <font color="red">&hearts;</font> the web</h2>
+	<p>I want you to be as excited about the current state of the web as I am.</p>
+	</div>
+</article>
+
+
+
+<article class='slide slide-accent' id="state">
+	<div><h2>The State of Front End Web Development 2012</h2></div>
+
+ </article>
+
+<article class='slide slide-image' 
+	style="background: url(images/monk.jpeg) no-repeat center center fixed; 
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;">
+	<div class="headline">
+	<h2 id="fittext2">In the words of Monk:</h2>
+	<h3 id="fittext3">Both a Gift and a Curse</h3>
+	</div>
+	<script type="text/javascript">
+			$("#fittext2").fitText(.95, { minFontSize: 50, maxFontSize: '90px' });
+			$("#fittext3").fitText(1.85, { minFontSize: 40,  });
+		</script>
+
+ </article>
+
+<article class='slide slide-image' 
+	style="background: url(images/cars.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;">	
+	<div class="darkbox">
+		<h1>We have lots of new <br/>toys to play with</h1>
+	</div>
+	<p class="caption">image by <a href="http://www.sxc.hu/profile/vertige">vertige</a></p>
+ </article>
+
+<article class='slide slide-accent' style="background: url(images/graph.gif) no-repeat center center fixed; 
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;">
+	<div><h2>But the Learning Curve is Steep and Continuous</h2></div>
+
+ </article>
+
+<article class='slide slide-accent'>
+	<div><h2>That's &#40;hopefully&#41; <br/>why your here</h2></div>
+ </article>
+
+<article class='slide slide-image' 
+	style="background: url(images/dogfence.gif) no-repeat center center fixed; 
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;">	
+ </article>
+
+<article class='slide slide-accent'>
+	<div><h2>What is Front End Development?</h2></div>
+ </article>
+
+<article class='slide slide-list'>
+	<section class="box drop-shadow lifted">
+	<h2>My Definition</h2>
+	<p>Technical implementation and best practices for user facing page elements.</p><br/><br/><br/><br/>
+	</section>
+ </article>
+
+
+<article class='slide slide-info'>	
+	<div class="whitebox">
+		<h1>What is it not?</h1>
+	</div>
+	<div>
+		<ul>
+			<li><p>Server side development</p></li>
+			<li><p>SEO from a content strategy standpoint</p></li>
+			<li><p>Marketing</p></li>
+			<li><p>Social-media douchbaggery</p></li>
+		</ul>	
+	</div>	
+ </article>
+
+<article class='slide slide-info'>	
+	<div class="whitebox">
+		<h1>But it is...</h1>
+	</div>
+	<div>
+		<ul>
+			<li><p>Interacting with server side code and writing server side views.</p></li>
+			<li><p>SEO from a technical practices standpoint</p></li>
+			<li><p>Landing page best practices</p></li>
+			<li><p>Implementing social widgets and required meta-data</p></li>
+		</ul>	
+	</div>	
+ </article>
+
+<article class='slide slide-image' 
+	style="background: url(images/venn.png) no-repeat center center fixed; 
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;">	
+	<div class="darkbox">
+		<h1>Players in website development</h1>
+	</div>
+	<p class="caption">image by <a href="http://www.sxc.hu/profile/vertige">vertige</a></p>
+ </article>
+
+<article class='slide slide-image' 
+	style="background: url(images/field.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;">	
+	<div class="darkbox">
+		<h1>Is Front-End Development a Career Path?</h1>
+	</div>
+	<p class="caption">image by <a href="http://www.sxc.hu/profile/vertige">vertige</a></p>
+
+ </article>
+
+<article class='slide slide-info'>	
+	<div class="whitebox">
+    <h1>Yes!</h1>
+	</div>
+	<div>
+    <img class='top-image' src='images/trends.png'/>
+    <h3>Not quite Java, Ruby or Python - but comparable to PHP. And ...</h3>
+	</div>	
+ </article>
+
+
+<article class='slide slide-info'>	
+	<div class="whitebox">
+    <h1>JavaScript jobs have<br/>overtaken PHP</h1>
+	</div>
+	<div>
+    <img class='top-image' src='images/jobgraph.png'/>
+	</div>	
+ </article>
+
+
+<article class='slide slide-info'>	
+	<div class="whitebox">
+    <h1>top ten job trends</h1>
+	</div>
+	<div>
+    <div class='left'>
+      <ol>
+        <li>html5 </li>
+        <li>mongodb</li>
+        <li>ios</li>
+        <li>android</li>
+        <li>mobile app</li>
+      </ol>
+    </div>
+    <div class='right'>
+      <ol start='6'>
+        <li>puppet</li>
+        <li>hadoop</li>
+        <li>jquery</li>
+        <li>paas</li>
+        <li>social media</li>
+      <ol>
+      </div>
+	</div>	
+ </article>
+
+ <article class='slide slide-info'>	
+	<div class="whitebox">
+    <h1>We are entering the<br/>JavaScript age</h1>
+	</div>
+	<div>
+    <ul>
+      <li><p>I. 1991-1999: The HTML Age.</p></li>
+      <li><p>II. 2000-2009: The LAMP (Linux/Apache/MySQL/PHP).</p></li>
+      <li><p>III. 2010-??: The JavaScript age</p></li>
+      <li><p>The JavaScript age is about event streams. Modern web pages are not pages, they are event-driven applications through which information moves.</p></li>
+      <li><p>The JavaScript age brings us closer to a web that is not a global
+      digital library, but a global digital nervous systen, whose implications we are only
+      beginning to apprehend. <a href='http://metamarkets.com/2011/node-js-and-the-javascript-age/'>(Source)</a></p></li>
+    </ul>
+	</div>	
+ </article>
+
+
+
+<article class='slide slide-list'>
+	<section class="box drop-shadow lifted">
+    <h2>The Basic Toolbox<br/>Hasn't Changed</h2>
+    <script type="text/javascript">
+			$("#fittext-toolbox").fitText(.85, { minFontSize: 50, maxFontSize: '100px' });
+		</script>
+		<ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li><span style='text-decoration:line-through'>Flash</span> (Well, it's changed a little bit)</li>
+    </ul>
+	</section>
+ </article>
+
+
+<article class='slide slide-accent'>
+	<div><h2 id="fittext-powerful">But it's gotten a lot more powerful</h2>
+    <h3>(And complicated)</h3>
+  </div>
+	<script type="text/javascript">
+			$("#fittext-powerful").fitText(.85, { minFontSize: 50, maxFontSize: '100px' });
+		</script>
+ </article>
+
+ <article class='slide slide-info slide-info-red'>	
+	<div class="whitebox">
+    <h1>HTML5</h1>
+	</div>
+	<div>
+    <ul>
+      <li>
+      	<p>Semantic Chop, Sectioning</p>
+      </li>
+      <li>
+      <p>Native Audio tag</p>
+      </li>
+      <li>
+      	<p>Native Video tag</p>
+      </li>
+      <li>
+      	<p>New Form elements</p>
+      </li>
+      <li>
+      	<p>New attributes (autofocus, placeholder, aria)</p>
+      </li>
+    </ul>
+	</div>	
+ </article>
+
+ <article class='slide slide-info slide-info-blue'>	
+	<div class="whitebox">
+    <h1>CSS3</h1>
+	</div>
+	<div>
+    <ul>
+      <li>
+      	<p>Media-queries</p>
+      </li>
+      <li>
+      	<p>Web typography via @font-face</p>
+      </li>
+      <li>
+      	<p>Rounded corners, Shadows, Transforms, multiple backgrounds</p>
+      </li>
+      <li>
+      	<p>Animation</p>
+      </li>
+      <li>
+      	<p>New selectors</p>
+      </li>
+      <li>
+      	<p>New layout options (columns, tables)</p>
+      </li>
+    </ul>
+	</div>	
+ </article>
+
+ <article class='slide slide-info slide-info-blue'>	
+	<div class="whitebox">
+    <h1>JavaScript</h1>
+	</div>
+	<div>
+    <ul>
+      <li>
+      	<p>jQuery has become the defacto-standard</p>
+      </li>
+      <li>
+      	<p>1001 jQuery plugins</p>
+      </li>
+      <li>
+      	<p>Canvas 2D + WebGL 3D</p>
+      </li>
+      <li>
+      	<p>Local Storage</p>
+      </li>
+      <li>
+      	<p>Offline Storage</p>
+      </li>
+      <li>
+      	<p>SVG</p>
+      </li>
+      <li>
+      	<p>New Events (touch, orientation, acceleration)</p>
+      </li>
+      <li>
+      	<p>Geolocation</p>
+      </li>
+    </ul>
+	</div>	
+ </article>
+
+
+
+<article class='slide slide-accent'>
+	<div><h2 class='fittext'>5 Tenets of modern front end development</h2>
+  </div>
+ </article>
+
+<article class='slide slide-list'>
+	<section class="box drop-shadow lifted">
+    <h2 >#1 Semantics</h2>
+    <p>Give your code meaning and the Google will reward you.</p>
+	</section>
+ </article>
+
+<article class='slide slide-list'>
+	<section class="box drop-shadow lifted">
+    <h2 class='fittext' >#2 Progressive<br/> Enhancement</h2>
+    <p>Start with a workable baseline, add features as supported.</p>
+    <p><a href='http://DoWebsitesNeedToLookExactlyTheSameInEveryBrowser.com'>www.DoWebsitesNeedToLookExactly-TheSameInEveryBrowser.com</a></p>
+	</section>
+ </article>
+
+<article class='slide slide-list'>
+	<section class="box drop-shadow lifted">
+    <h2 class='fittext'>#3 In jQuery<br/>we trust</h2>
+    <p>Learn jQuery first, then JavaScript. Understand your selectors and how to use plugins and you can fake it for a long time</p>
+	</section>
+ </article>
+
+<article class='slide slide-list'>
+	<section class="box drop-shadow lifted">
+    <h2 class='fittext'>#4 Capabilities,<br/>not browsers</h2>
+
+    <p>Don't look at the user agent, this stuff changes way too quickly.</p>
+    <p>Use modernizr or the like and make decisions based on capabilities.</p>
+	</section>
+ </article>
+
+<article class='slide slide-list'>
+	<section class="box drop-shadow lifted">
+    <h2 class='fittext'>#5 It's no longer just the desktop</h2>
+
+    <p>Mobile and Tablet browsers are taking over. This year double digits, in a couple years
+    50% (Made up number).</p>
+	</section>
+ </article>
+
+<article class='slide slide-accent'>
+	<div><h2><a href="http://marthar.github.com/startupExercises/1.html">Let's Get Started!!</a></h2></div>
+ </article>
+
+
+
+
+
+
+<script src='dist/coderdeck.min.js'></script>
+
+<script>
+	$(function() {
+		$.deck('.slide');
+
+    $(".fittext").fitText(.85, { minFontSize: 80, maxFontSize: '100px' });
+	});
+</script>
+</body>
+</html>

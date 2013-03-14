@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Making it Great!</title>
+	<meta name="viewport" content="width=1024">
+	
+		<!-- Replace path with correct path to deck.core.css. -->
+		<link rel="stylesheet" href="src/deck.js/core/deck.core.css" type="text/css">
+
+		<!-- Core and extension CSS files -->
+		<link rel="stylesheet" href="src/deck.js/extensions/navigation/deck.navigation.css">
+		<link rel="stylesheet" href="src/deck.js/extensions/status/deck.status.css">
+		<link rel="stylesheet" href="src/deck.js/extensions/hash/deck.hash.css">
+		<link rel="stylesheet" href="src/deck.js/extensions/menu/deck.menu.css">
+		<link rel="stylesheet" href="src/css/prettify.css">
+		<link rel="stylesheet" href="src/css/deck.coder.css">
+		<script type="text/javascript" src="//use.typekit.net/bvs1pon.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+		<!-- Theme -->
+		<link rel="stylesheet" id='style-theme-link' href="src/css/coderdeck.css" type="text/css" >
+
+		<link rel="stylesheet" href="src/codemirror/lib/codemirror.css">
+		<link rel="stylesheet" href="src/codemirror/theme/default.css">
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+		<!-- Replace path with correct path to Modernizr file. -->
+
+		<script src='src/jquery.min.js'></script>
+		<script src="src/modernizr.js"></script>
+	</head>
+	<body class="deck-container">
+		<script type='text/coderdeck' id='coderdeck-default'>
+		  <html>
+		    <head>
+		      <script src='src/jquery.min.js'>SCRIPTEND
+		    </head>
+		    <body>
+			    CODE
+		    </body>
+		</html>
+		</script>
+
+		<script type='text/coderdeck' id='coderdeck-plain'>
+			<html>
+				<title>test</title>
+				<link rel="stylesheet" href="reset.css">
+				<body>
+					CODE
+				</body>
+			</html>
+		</script>
+
+		<script type='text/coderdeck' id='coderdeck-css-playground'>
+			<html>
+				<title>test</title>
+					CODE
+				<body>
+					<h1>I'm a H1 heading</h1>
+					<h2>I'm a H2 heading</h2>
+					<p>Pargraph of text &lt;p&gt;</p>
+					<div class='stuff'>&lt;div&gt; with class "stuff"</div>
+					<div id='my-div'>&lt;div&gt; with id "my-div"</div>
+				</body>
+			</html>
+		</script>
+
+
+		<script type='text/coderdeck' id='coderdeck-style-example'>
+			<html>
+				<title>test</title>
+				<style>
+					CODE
+				</style>
+				<body>
+					<h1>I'm a H1 heading</h1>
+					<h2>I'm a H2 heading</h2>
+					<h3>Pargraph of text &lt;p&gt; here</p>
+					<div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+					<div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+				</body>
+			</html>
+		</script> 	
+
+		<script type='text/coderdeck' id='coderdeck-full-page'>
+		CODE
+		</script>
+
+
+<!-- Create any number of elements with class slide within the container -->
+<article class='slide slide-subhead'>
+<h1>Boston StartUp School</h1>
+<h2>Putting it All Together</h2>
+<p>December 6, 2012<br/>
+</article>
+
+<article class='slide slide-subhead'>
+   <h1>You've Learned a Lot</h1>
+   <h2>(we've covered HTML, CSS, &amp; jQuery)</h2>
+</article>
+
+<article class='slide slide-accent'>
+<h2>How do we put it all together?</h2>
+</article>
+
+<article class='slide slide-subhead'>
+ <h1>Let's Build a Super Landing Page</h1>
+ <h2>using everything we've learned</h2>
+</article>
+
+<article class='slide slide-image'>
+		<a href="http://marthar.github.com/startupExercises/landing-demo/index.html"><img src="images/landing.jpg" class='top-image'/></a>
+		<p>click image to open page</p>
+</article>
+
+
+<article class='slide slide-list' >
+<h2>What will we use?</h2>
+  <ul>
+    <li class='slide'/><h3>images we have (or will take)</h3></li>
+    <li class='slide'/><h3>a free iPhone file from dribbble</h3></li>
+    <li class='slide'/><h3>a jQuery library to create a full screen image</h3></li>
+    <li class='slide'/><h3>a jQuery library to rotate through our background images</h3></li>
+	<li class='slide'/><h3>a Google Font</h3></li>
+	<li class='slide'/><h3>HTML Forms</h3></li>
+	<li class='slide'/><h3>a CSS3 button generator</h3></li>
+  </ul>
+</article>
+
+<article class='slide slide-accent'>
+<h2>Let's Make Some Compelling Images</h2>
+</article>
+
+
+<article class='slide slide-subhead'>
+ <h1>You don't need expensive stock photography</h1>
+</article>
+
+
+<article class='slide slide-subhead'>
+<h1><a href="http://dribbble.com/shots/661417-iPhone-holding-hand-Free-PSD">This image is a freebie from dribbble</a></h1>
+ <h3>The rest I had on my phone or walked outside and took with my phone</h3>
+</article>
+
+<article class='slide slide-subhead'>
+ <h1>Let's work a little photoshop &amp; illustrator magic</h1>
+</article>
+
+<article class='slide slide-accent'>
+<h2>Getting Our New Images in our Page</h2>
+</article>
+
+
+<article class='slide slide-subhead'>
+ <h1><a href="http://css-tricks.com/perfect-full-page-background-image/">Background Images</a></h1>
+ <h3>Here's some basic CSS options for background images</br>We won't use this today - but it's good to keep around</h3>
+</article>
+
+<article class='slide slide-subhead'>
+ <h1><a href="http://jquery.malsup.com/cycle/">Remember Cycle from our first week?</a></h1>
+ <h3>We won't use this today - but it's good to keep around</h3>
+</article>
+
+<article class='slide slide-subhead'>
+ <h1><a href="http://srobbin.com/jquery-plugins/backstretch/">We'll use backstretch</a></h1>
+ <h3>It's a great combo of cover images + cycle</h3>
+</article>
+
+<article class='slide slide-subhead'>
+ <h1>Let's all get our images working</h1>
+</article>
+
+<article class='slide slide-accent'>
+<h2>Now Add Some Text and a Font</h2>
+</article>
+
+<article class='slide slide-subhead'>
+ <h1>First You'll need a stylesheet</h1>
+ <h2><a href="http://marthar.github.com/startupExercises/2#slide-41">Remember this?</a></h2>
+</article>
+
+
+<article class='slide slide-subhead'>
+ <h1><a href="http://www.google.com/webfonts#UsePlace:use/Collection:Oswald">I used Google Fonts</a></h1>
+ <h2>Try adding a new google font to your page</h2>
+</article>
+
+<article class='slide slide-list'>
+ <h1>Other Options</h1>
+	<ul>
+ 		<li><h3><a href="http://www.fontsquirrel.com/">FontSquirrel</a></h3></li>
+ 		<li><h3><a href="https://typekit.com/fonts">TypeKit</a></h3></li>
+ 		<li><h3><a href="http://typecast.com/">Typecast is a great app to test out webfonts</a></h3></li>
+	</ul>	
+</article>
+
+<article class='slide slide-accent'>
+<h2>Let's Add a Form</h2>
+</article>
+
+<article class='slide slide-subhead'>
+ <h1>We only need to add the right code and style it</h1>
+	<h3>our programmers take care of the rest<br/><a href="http://line25.com/tutorials/create-a-stylish-contact-form-with-html5-css3">Here's a great tutorial - Chris Spooner has lots of others</a></h3>
+</article>
+
+
+
+<article class='slide slide-accent'>
+<h2>Let's Style our Button</h2>
+</article>
+
+<article class='slide slide-subhead'>
+	 <h1><a href="http://cssdeck.com/labs/push-the-buttons">I used CSSDeck Push Buttons</a></h1>
+</article>
+
+
+<article class='slide slide-accent'>
+<h2>Viola! You have a Super Landing Page!</h2>
+</article>
+
+<!-- Update these paths to point to the correct files. -->
+<script src="src/jquery.tmpl.min.js"></script>
+<script src="src/deck.js/core/deck.core.js"></script>
+
+<!-- Code Mirror -->
+<script src="src/codemirror/lib/codemirror.js"></script>
+<script src="src/codemirror/mode/xml/xml.js"></script>
+<script src="src/codemirror/mode/css/css.js"></script>
+<script src="src/codemirror/mode/javascript/javascript.js"></script>
+<script src="src/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+<!-- Prettify -->
+<script src="src/prettify.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="src/deck.js/extensions/status/deck.status.js"></script>
+<script src="src/deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src='src/deck.coder.js'></script>
+<script src="src/deck.js/extensions/hash/deck.hash.js"></script>
+<script src="src/deck.js/extensions/menu/deck.menu.js"></script>
+
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>

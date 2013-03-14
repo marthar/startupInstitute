@@ -1,0 +1,212 @@
+.slide { max-width:100%; overflow:hidden; }
+
+@mixin head { font-family: "proxima-nova-condensed",Helvetica, sans-serif; font-weight:800; text-align:left;text-transform:uppercase;}
+@mixin body {font-family: "adelle",Georgia, serif; text-align:left; font-weight:300;}
+@mixin transform {
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;}
+@mixin paper { 
+	.box { 
+		width:100%; 
+		margin:0 auto;
+		padding:3em;
+	}
+	
+	.drop-shadow {
+	    position:relative;
+	    float:left;
+	    width:40%;    
+	    margin:0 25%; 
+	    background:#fff;
+	    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	}
+	
+	.drop-shadow:before,
+	.drop-shadow:after {
+	    content:"";
+	    position:absolute; 
+	    z-index:-2;
+	}
+	
+	
+	
+	.lifted {
+	    -moz-border-radius:0 0 4px 4px; 
+	    border-radius:0 0 4px 4px; 
+	}
+	
+	.lifted:before,
+	.lifted:after { 
+	    bottom:15px;
+	    left:10px;
+	    width:50%;
+	    height:20%;
+	    max-width:300px;
+	    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);   
+	    -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	    -webkit-transform:rotate(-3deg);    
+	    -moz-transform:rotate(-3deg);   
+	    -ms-transform:rotate(-3deg);   
+	    -o-transform:rotate(-3deg);
+	    transform:rotate(-3deg);
+	}
+	
+	.lifted:after {
+	    right:10px; 
+	    left:auto;
+	    -webkit-transform:rotate(3deg);   
+	    -moz-transform:rotate(3deg);  
+	    -ms-transform:rotate(3deg);  
+	    -o-transform:rotate(3deg);
+	    transform:rotate(3deg);
+}
+	/*END---Paper Mixin*/}
+
+$orange:#f4a103;
+$teal:#51a7a6;
+$blue:#3daad5;
+$gray:#999;
+$gold:#f3d77e;
+
+.deck-container {
+	padding:0;
+	a { color:$gold; }
+
+	
+/*----SUBHEAD-------*/
+	.slide-subhead {
+		@include paper;
+		background-color:$teal;
+		a { color:$teal; }
+		h1 { padding:0; @include head; color:$orange;}
+		h2 { @include body; color:$gray;line-height:1em; padding:.5em 0;}
+		p { @include body; color:$gray; font-weight:300;}
+			
+	
+	}
+/*END----SUBHEAD*/
+
+/*----LIST-------*/
+	.slide-list {
+		@include paper;
+		background-color:$orange;
+		a { color:$teal; }
+		h2 { padding:0; @include head; color:$orange; font-size:4.5em; border:none; margin-bottom:10px; line-height:1em;}
+		ul {color:$gold; font-size:1.5em; list-style-type:disc; margin-bottom:0;}
+		h3 { @include head; color:$orange; padding-left:1em; padding-top:0; font-size:2em;}
+		p { @include body; color:$gray; font-weight:300; font-size:1.45em; line-height:1.5em;}
+		li  { @include body;  color:$gold;
+			p { color:$gray; font-size:.9em; line-height:1em; margin:0;}
+			a:hover { color:$teal; text-decoration:none;}
+			}
+			
+	
+	}
+/*END----List*/
+
+/*----ACCENT-------*/
+	.slide-accent {
+		background-color:$blue;
+		a { color:$gold; }
+		div { margin:0 auto; width:65%; padding:5%; }
+		h1, h2 { padding:0; @include head; color:white; font-size:4.25em; line-height:1em; margin-top:15%; margin-bottom:0px;}
+		h3 { padding:0px; color:$gold; font-size:3em; font-weight:normal;}
+		p { @include body; color:white; font-weight:300;}
+			
+	
+	}
+/*END----ACCENT------*/
+
+/*----IMAGE-DARKBOX-------*/
+	.slide-image {
+		background-color:$blue;
+		a { color:$gold; }
+		.caption { position:absolute; bottom:0; right:2%; font-size:.85em; color:$gray;
+			a {color:$teal;}
+		}
+		.headline { margin:0 auto; width:85%; padding:3%; }
+		h1 { @include transform; position:static; letter-spacing:0; @include head; color:white; font-size:4em; line-height:1em; padding-bottom:2%;  }
+		h2 { padding:0; @include head; color:$orange; font-size:4em; line-height:1em; margin:0;}
+		h3 { @include body; font-size:2em;}
+		p { @include body; color:$gray; font-weight:300;
+
+		}
+		.darkbox {
+			width:100%;
+			position:absolute; 
+			bottom:-4.2%;;
+			left:-5%; 
+			transform:rotate(-5deg);
+			-ms-transform:rotate(-5deg); /* IE 9 */
+			-moz-transform:rotate(-5deg); /* Firefox */
+			-webkit-transform:rotate(-5deg); /* Safari and Chrome */
+			-o-transform:rotate(-5deg); /* Opera */
+			padding:5% 10% 10% 10%; background-color:rgba(0,0,0,.8);
+			
+		}
+			
+	
+	}
+/*END----IMAGE DARKBOX------*/
+
+
+/*----Info Whitebox-------*/
+	.slide-info {
+		background-color:$teal;
+		a { color:$gold; }
+		.caption { position:absolute; bottom:0; right:10px; font-size:.85em; color:$gray;
+			a {color:$teal;}
+		}
+		div { margin:0 auto; width:65%; padding:50px; }
+		.headline { margin:0 auto; width:85%; padding:10px; }
+		h1 { @include transform; position:static; top:20px; letter-spacing:0; @include head; color:$orange; font-size:3.5em; line-height:1em; padding-bottom:0px;  }
+		h2 { padding:0; @include head; color:white; font-size:4em; line-height:1em; margin-top:30px;}
+		h3 { @include body; font-size:2em; color:$gold;}
+		ul {color:$gold; margin-bottom:0; margin-top:150px;
+			li  {  list-style-type:disc; 
+				a { color:$gold;}
+				a:hover { color:$orange; text-decoration:none;}
+				p { @include body; color:white; line-height:1.2em;}
+				}	
+		}
+		p { @include body; color:$gray; font-weight:300; font-size:1.45em; line-height:1.5em;}
+		
+		img.top-image { padding-top:150px; }
+
+		ol {
+	         padding-top:150px;
+		 li { @include body; font-size:2em; color:white;}
+		}
+
+
+		.left { float:left; width:40%; }
+		.right { float:right; width:40%; }
+
+		.whitebox {
+			width:100%;
+			position:absolute; 
+			top:-60px;;
+			left:-20px; 
+			transform:rotate(-5deg);
+			-ms-transform:rotate(-5deg); /* IE 9 */
+			-moz-transform:rotate(-5deg); /* Firefox */
+			-webkit-transform:rotate(-5deg); /* Safari and Chrome */
+			-o-transform:rotate(-5deg); /* Opera */
+			padding:80px 20px 20px 20px; background-color:white;
+			-moz-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+			-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+			box-shadow: 2px 2px 5px rgba(0,0,0,.2);			
+		}
+			
+	
+	}
+/*END----INFO WHITEBOX------*/
+
+
+}	
