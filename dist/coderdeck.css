@@ -67,7 +67,7 @@
     color: #bf0000;
     border: none; }
   .deck-container h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "adelle",Georgia, serif;
     font-weight: 800; }
   .deck-container .slide > pre {
     padding:10px;
@@ -88,10 +88,10 @@
       font-weight: bold;
       color: #888; }
   .deck-container ::-moz-selection {
-    background: #bf0000;
+    background: #f3d77e;
     color: #fff; }
   .deck-container ::selection {
-    background: #bf0000;
+    background: #f3d77e;
     color: #fff; }
   .deck-container a, .deck-container a:hover, .deck-container a:focus, .deck-container a:active, .deck-container a:visited {
     color: #bf0000;
